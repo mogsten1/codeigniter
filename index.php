@@ -53,8 +53,8 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-
+//	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+define('ENVIRONMENT', strpos($_SERVER['SERVER_NAME'], 'informationaware.com') ? 'production' : 'development');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
